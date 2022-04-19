@@ -1,0 +1,698 @@
+/* Fuentes GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+/* font-family: 'Birthstone', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+/* font-family: 'Slabo 27px', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+/* Fuentes GOOGLE FONTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+}
+
+/* HEADER */
+
+.encabezado {
+    display: grid;
+    grid-template-columns: auto 60%;
+    align-items: center;
+    background-color: #BF9B77;
+    width: 100%;
+}
+
+.nav-logo {
+    width: 7rem;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.nav-logo:hover {
+    transform: rotate(360deg);
+}
+
+.barraNavegacion__Lista {
+    display: flex;
+    
+}
+
+.barraNavegacion__Lista li {
+    list-style: none;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    transition: transform 0.25s ease;
+}
+
+.barraNavegacion__Lista li:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.barraNavegacion__Lista li a {
+    text-decoration: none;
+    color: white;
+    transition: width 0.25s ease;
+}
+
+.barraNavegacion__Lista li a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+
+
+
+/* INDEX LAYOUT */
+
+.index-layout {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "principal principal principal"
+        "historia historia historia"
+        "pie pie pie";
+}
+
+.header-grid {
+    grid-area: cabecera;
+}
+
+.main-index-grid {
+    grid-area: principal;
+}
+
+.historia-grid {
+    grid-area: historia;
+}
+
+.pie-grid {
+    grid-area: pie;
+}
+
+/* INDEX LAYOUT */
+
+/* INDEX */
+
+.titulo-grid h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    background-image: url("./imagenes/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    width: 100%;
+}
+
+.indexImagen1 {
+    width: 25rem;
+}
+
+.indexImagen2 {
+    width: 34.5rem;
+}
+
+.indexImagen3 {
+    width: 31.5rem;
+}
+
+.indexMain {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+
+}
+
+.cards {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
+    background-color: #bf9b77;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.39' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    transition: all 0.25s;
+
+}
+
+.cards:hover {
+    transform: translateY(-15px)
+}
+
+.indexImagen1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+.indexImagen2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+.indexImagen3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+
+.textoCards {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color:#4c47473d;
+    border-radius: 10%;
+   
+}
+
+
+/* INDEX */
+
+
+
+
+/* PRODUCTOS LAYOUT */
+
+
+.productos-layout {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "productos productos productos"
+        "pie pie pie";
+
+}
+
+.header-grid {
+    grid-area: cabecera;
+}
+
+.grid-productos-main {
+    grid-area: productos;
+}
+
+.pie-grid {
+    grid-area: pie;
+}
+
+/* PRODUCTOS LAYOUT */
+
+
+
+/* PRODUCTOS */
+
+.fotoProducto {
+    width: 15rem;
+}
+
+
+.productos-titulo h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #BF9B77;
+}
+
+.catalogoProducto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fotoProductoDiv {
+    margin: 1rem;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.fotoProductoDiv p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* PRODUCTOS */
+
+
+/* NOSOTRAS LAYOUT */
+
+.nosotras-layout {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "nosotras nosotras nosotras"
+        "pie pie pie";
+}
+
+.header-grid {
+    grid-area: cabecera;
+}
+
+.main-nosotras-grid {
+    grid-area: nosotras;
+}
+
+.pie-grid {
+    grid-area: pie;
+}
+
+
+/* NOSOTRAS LAYOUT */
+
+
+/* NOSOTRAS */
+
+
+.nosotras-titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #BF9B77;
+}
+
+.mujer1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mujer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mujer1 p {
+    font-size: 2rem;
+}
+
+.mujer2 p {
+    font-size: 2rem;
+}
+
+/* NOSOTRAS */
+
+
+
+
+/* ENVIOS LAYOUT */
+
+.envios-layout {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "envios envios envios"
+        "pie pie pie";
+}
+
+.header-grid {
+    grid-area: cabecera;
+}
+
+.envios-main-grid {
+    grid-area: envios;
+}
+
+.pie-grid {
+    grid-area: pie;
+}
+
+/* ENVIOS LAYOUT */
+
+/* ENVIOS */
+
+.envios-main-grid h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #BF9B77;
+}
+
+.enviosMain {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6.875rem;
+}
+
+.mapaBox {
+    border: solid 0.125rem black;
+    width: 31.25rem;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapaBox h2 {
+    font-family: 'Birthstone', cursive;
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+.preciosBox {
+    border: solid 0.125rem black;
+    width: 35rem;
+    height: 37rem;
+}
+
+.preciosBox p {
+    font-family: 'Birthstone', cursive;
+    font-size: 2.188rem;
+    text-align: center;
+    margin: 1.9rem;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    margin: 1.2rem;
+}
+
+/* ENVIOS */
+
+
+
+
+/* CONTACTO LAYOUT */
+
+.contacto-layout {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "contacto contacto contacto"
+        "pie pie pie";
+}
+
+
+.header-grid {
+    grid-area: cabecera;
+}
+
+.main-grid-contacto {
+    grid-area: contacto;
+}
+
+.pie-grid {
+    grid-area: pie;
+}
+
+/* CONTACTO LAYOUT */
+
+.titulo-contacto {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #BF9B77;
+}
+
+/* CONTACTO */
+
+
+.formulario {
+    width: 40rem;
+    background-color: #BF9B77;
+    margin: auto;
+    padding: 5.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: inset 0.313rem black;
+    box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.formulario__titulo {
+    position: relative;
+    bottom: 1.9rem;
+    font-size: 25px;
+}
+
+.formulario__entradas {
+    width: 80%;
+    margin: 0.625rem;
+    padding: 0.9rem;
+    border: solid 0.125rem #000000;
+}
+
+.formulario__botones {
+    width: 50%;
+    padding: 0.313rem;
+    margin: 0.625rem;
+    position: relative;
+    top: 3.125rem;
+}
+
+textarea {
+    resize: none;
+    border: solid 0.125rem #000000;
+    margin-top: 0.625rem;
+}
+
+/* CONTACTO */
+
+
+/* FOOTER */
+
+.piePagina {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #BF9B77;
+
+}
+
+.piePagina img {
+    transition: all 0.25s;
+}
+
+.piePagina img:hover {
+    transform: scale(1.2,1.2);
+}
+
+/* FOOTER */
+
+
+
+
+
+
+
+/*RESPONSIVE */
+
+/* INDEX */
+
+@media only screen and (max-width: 768px) {
+    .index-layout {
+        grid-template-areas:
+            "cabecera"
+            "principal"
+            "historia"
+            "pie";
+    }
+
+    .encabezado {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+    }
+
+    .nav-logo {
+        width: 5rem;
+    }
+
+    .barraNavegacion__Lista li {
+        font-size: 0.9rem;
+    }
+
+
+    .titulo-grid h1 {
+        font-size: 1.4rem;
+        width: 100%;
+        margin: auto;
+    
+    }
+    .indexMain {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .indexImagen1 {
+        width: 15rem;
+    }
+
+    .indexImagen2 {
+        width: 15rem;
+    }
+
+    .indexImagen3 {
+        width: 15rem;
+    }
+
+
+    .tituloHistoria {
+        font-size: 1.2rem;
+    }
+
+    .parrafoHistoria {
+        font-size: 1rem;
+    }
+
+    .piePagina {
+        flex-direction: column;
+    }
+
+    .piePagina p {
+        font-size: 1rem;
+    }
+
+    .piePagina img {
+        width: 1rem;
+    }
+
+    /* INDEX */
+
+    /* PRODUCTOS */
+
+    .productos-layout {
+        grid-template-areas:
+            "cabecera"
+            "productos"
+            "pie";
+    }
+
+    .catalogoProducto {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .productos-titulo {
+        font-size: 0.8rem;
+    }
+
+    /* NOSOTRAS */
+
+    .nosotras-layout {
+        grid-template-areas:
+            "cabecera"
+            "nosotras"
+            "pie";
+    }
+
+    .nosotras-titulo {
+        font-size: 1.6rem;
+    }
+
+    .mujer1 img,
+    .mujer2 img {
+        width: 17rem;
+    }
+
+    .mujer1 {
+        flex-direction: column;
+    }
+
+    .mujer2 {
+        flex-direction: column;
+    }
+
+    .mujer1 p,
+    .mujer2 p {
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+    }
+
+
+    /* ENVIOS */
+
+    .envios-layout {
+        grid-template-areas:
+            "cabecera"
+            "envios"
+            "pie";
+    }
+
+    .envios-main-grid h1 {
+        font-size: 1.5rem;
+    }
+
+    .enviosMain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapaBox {
+        width: 30rem;
+        height: 20rem;
+        margin-bottom: 4rem;
+    }
+
+    .imagen-moto {
+        width: 35rem;
+    }
+
+    .preciosBox {
+        border: solid 2px black;
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .preciosBox p {
+        margin: 0;
+    }
+
+    /* CONTACTO */
+
+    .contacto-layout {
+        grid-template-areas:
+            "cabecera"
+            "contacto"
+            "pie";
+    }
+
+    .titulo-contacto {
+        font-size: 1.4rem;
+    }
+
+    .formulario {
+        width: 25rem;
+        margin: 4rem auto;
+        padding: 4.625rem;
+    }
+
+}
+
+/*RESPONSIVE */
