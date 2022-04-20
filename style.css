@@ -223,7 +223,9 @@ body {
 /* PRODUCTOS */
 
 .fotoProducto {
-    width: 15rem;
+    width: 90%;
+    margin: 1rem;
+    border-radius: 10%;
 }
 
 
@@ -236,10 +238,13 @@ body {
 .catalogoProducto {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .fotoProductoDiv {
-    margin: 1rem;
+    margin: 1rem;   
+    width: 20rem;
     border: solid 1px black;
     display: flex;
     flex-direction: column;
@@ -248,12 +253,18 @@ body {
     box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10%;
+    transition: all 0.25s;
+}
 
+.fotoProductoDiv:hover {
+    transform: translateY(-15px);
 }
 
 .fotoProductoDiv p {
     font-size: 1.3rem;
     text-align: center;
+    margin: 0.5rem;
 }
 
 /* PRODUCTOS */
@@ -545,7 +556,7 @@ textarea {
     .indexMain {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 3rem;
         justify-items: center;
     }
 
@@ -602,6 +613,14 @@ textarea {
         font-size: 0.8rem;
     }
 
+    .fotoProducto {
+        width: 70%;
+    } 
+
+    .fotoProductoDiv {  
+        width: 18rem;
+    }  
+
     /* NOSOTRAS */
 
     .nosotras-layout {
@@ -630,7 +649,7 @@ textarea {
 
     .mujer1 p,
     .mujer2 p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 5rem;
     }
 
@@ -655,23 +674,25 @@ textarea {
     }
 
     .mapaBox {
-        width: 30rem;
+        width: 20rem;
         height: 20rem;
-        margin-bottom: 4rem;
+        margin-bottom: 10rem;
     }
 
     .imagen-moto {
-        width: 35rem;
+        width: 19rem;
     }
 
     .preciosBox {
         border: solid 2px black;
-        width: 30rem;
+        width: 20rem;
         height: 20rem;
     }
 
     .preciosBox p {
         margin: 0;
+        font-size: 1.8rem;
+
     }
 
     /* CONTACTO */
@@ -688,11 +709,22 @@ textarea {
     }
 
     .formulario {
-        width: 25rem;
+        width: 20rem;
         margin: 4rem auto;
         padding: 4.625rem;
     }
 
+    .formulario__entradas {
+        width: 15rem;
+    }
+
+    .formulario__botones {
+        width: 10rem;
+    }
+
+    textarea {
+        width: 15rem;
+    }
 }
 
 /*RESPONSIVE */
