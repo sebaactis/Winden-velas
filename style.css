@@ -478,6 +478,11 @@ body {
     margin: 0.625rem;
     position: relative;
     top: 3.125rem;
+    transition: all 0.25s;
+}
+
+.formulario__botones:hover {
+    transform: scale(1.1, 1.1);
 }
 
 textarea {
