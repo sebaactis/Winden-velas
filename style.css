@@ -24,11 +24,12 @@ body {
 /* HEADER */
 
 .encabezado {
-    display: grid;
-    grid-template-columns: auto 60%;
-    align-items: center;
     background-color: #BF9B77;
-    width: 100%;
+}
+
+.barraNav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-logo {
@@ -41,30 +42,12 @@ body {
     transform: rotate(360deg);
 }
 
-.barraNavegacion__Lista {
-    display: flex;
-    
-}
-
-.barraNavegacion__Lista li {
-    list-style: none;
-    text-decoration: none;
-    margin: 1rem;
+.nav-item a {
     font-size: 1.5rem;
-    transition: transform 0.25s ease;
+    transition: all 0.5s ease;
 }
 
-.barraNavegacion__Lista li:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.barraNavegacion__Lista li a {
-    text-decoration: none;
-    color: white;
-    transition: width 0.25s ease;
-}
-
-.barraNavegacion__Lista li a:hover {
+.nav-item a:hover {
     text-decoration: underline;
 }
 
@@ -72,42 +55,12 @@ body {
 
 
 
-/* INDEX LAYOUT */
-
-.index-layout {
-    display: grid;
-    row-gap: 2rem;
-    grid-template-areas:
-        "cabecera cabecera cabecera"
-        "principal principal principal"
-        "historia historia historia"
-        "pie pie pie";
-}
-
-.header-grid {
-    grid-area: cabecera;
-}
-
-.main-index-grid {
-    grid-area: principal;
-}
-
-.historia-grid {
-    grid-area: historia;
-}
-
-.pie-grid {
-    grid-area: pie;
-}
-
-/* INDEX LAYOUT */
-
 /* INDEX */
 
 .titulo-grid h1 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     color: white;
     background-image: url("./imagenes/fondo1.jpg");
     background-repeat: no-repeat;
@@ -117,73 +70,22 @@ body {
     width: 100%;
 }
 
-.indexImagen1 {
-    width: 25rem;
+.carouselBox {
+    width: 40rem;
+    margin: auto;
+    padding: 1.2rem;
 }
 
-.indexImagen2 {
-    width: 34.5rem;
+.carousel-item img {
+    height: 30rem;
+    border-radius: 5%;
 }
 
-.indexImagen3 {
-    width: 31.5rem;
-}
-
-.indexMain {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2.5rem;
-
-}
-
-.cards {
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    padding: 1rem;
-    border-radius: 10%;
-    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
-    background-color: #bf9b77;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.39' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    transition: all 0.25s;
-
-}
-
-.cards:hover {
-    transform: translateY(-15px)
-}
-
-.indexImagen1 {
-    width: 100%;
-    height: 100%;
-    border-radius: 15%;
-}
-
-.indexImagen2 {
-    width: 100%;
-    height: 100%;
-    border-radius: 15%;
-}
-
-.indexImagen3 {
-    width: 100%;
-    height: 100%;
-    border-radius: 15%;
-}
-
-
-.textoCards {
+.parrafoWinden {
+    font-size: 1.3rem;
     text-align: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-    background-color:#4c47473d;
-    border-radius: 10%;
-   
+    margin: auto;
+    margin: 2rem 0;
 }
 
 
@@ -191,43 +93,22 @@ body {
 
 
 
-
-/* PRODUCTOS LAYOUT */
-
-
-.productos-layout {
-    display: grid;
-    grid-template-areas:
-        "cabecera cabecera cabecera"
-        "productos productos productos"
-        "pie pie pie";
-
-}
-
-.header-grid {
-    grid-area: cabecera;
-}
-
-.grid-productos-main {
-    grid-area: productos;
-}
-
-.pie-grid {
-    grid-area: pie;
-}
-
-/* PRODUCTOS LAYOUT */
-
-
-
 /* PRODUCTOS */
 
-.fotoProducto {
-    width: 90%;
-    margin: 1rem;
-    border-radius: 10%;
+
+
+.card {
+    margin: 1rem 1rem;
+    transition: all 0.25s;
+    box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
 }
 
+.cards__productos {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .productos-titulo h1 {
     text-align: center;
@@ -235,65 +116,14 @@ body {
     color: #BF9B77;
 }
 
-.catalogoProducto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-.fotoProductoDiv {
-    margin: 1rem;   
-    width: 20rem;
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -2px 11px 25px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 10%;
-    transition: all 0.25s;
-}
-
-.fotoProductoDiv:hover {
+.card:hover {
     transform: translateY(-15px);
 }
 
-.fotoProductoDiv p {
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 0.5rem;
-}
 
 /* PRODUCTOS */
 
 
-/* NOSOTRAS LAYOUT */
-
-.nosotras-layout {
-    display: grid;
-    grid-template-areas:
-        "cabecera cabecera cabecera"
-        "nosotras nosotras nosotras"
-        "pie pie pie";
-}
-
-.header-grid {
-    grid-area: cabecera;
-}
-
-.main-nosotras-grid {
-    grid-area: nosotras;
-}
-
-.pie-grid {
-    grid-area: pie;
-}
-
-
-/* NOSOTRAS LAYOUT */
 
 
 /* NOSOTRAS */
@@ -319,12 +149,13 @@ body {
     align-items: center;
 }
 
+
 .mujer1 p {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .mujer2 p {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 /* NOSOTRAS */
@@ -332,107 +163,28 @@ body {
 
 
 
-/* ENVIOS LAYOUT */
-
-.envios-layout {
-    display: grid;
-    grid-template-areas:
-        "cabecera cabecera cabecera"
-        "envios envios envios"
-        "pie pie pie";
-}
-
-.header-grid {
-    grid-area: cabecera;
-}
-
-.envios-main-grid {
-    grid-area: envios;
-}
-
-.pie-grid {
-    grid-area: pie;
-}
-
-/* ENVIOS LAYOUT */
-
-/* ENVIOS */
-
-.envios-main-grid h1 {
+.titulo-envios {
     text-align: center;
     margin: 2rem 0;
     color: #BF9B77;
 }
 
-.enviosMain {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 6.875rem;
-}
 
-.mapaBox {
-    border: solid 0.125rem black;
-    width: 31.25rem;
-    height: 31.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mapaBox h2 {
-    font-family: 'Birthstone', cursive;
-    font-size: 1.875rem;
+.titulo-showroom {
     text-align: center;
-}
-
-.preciosBox {
-    border: solid 0.125rem black;
-    width: 35rem;
-    height: 37rem;
-}
-
-.preciosBox p {
-    font-family: 'Birthstone', cursive;
-    font-size: 2.188rem;
-    text-align: center;
-    margin: 1.9rem;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #BF9B77;
 }
 
 .mapa {
     width: 100%;
     height: 100%;
-    margin: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 /* ENVIOS */
 
-
-
-
-/* CONTACTO LAYOUT */
-
-.contacto-layout {
-    display: grid;
-    grid-template-areas:
-        "cabecera cabecera cabecera"
-        "contacto contacto contacto"
-        "pie pie pie";
-}
-
-
-.header-grid {
-    grid-area: cabecera;
-}
-
-.main-grid-contacto {
-    grid-area: contacto;
-}
-
-.pie-grid {
-    grid-area: pie;
-}
-
-/* CONTACTO LAYOUT */
 
 .titulo-contacto {
     text-align: center;
@@ -445,9 +197,10 @@ body {
 
 
 .formulario {
-    width: 40rem;
+    width: 35rem;
     background-color: #BF9B77;
     margin: auto;
+    margin-bottom: 2rem;
     padding: 5.625rem;
     display: flex;
     flex-direction: column;
@@ -473,11 +226,13 @@ body {
 }
 
 .formulario__botones {
-    width: 50%;
-    padding: 0.313rem;
-    margin: 0.625rem;
+    width: 70%;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: white;
     position: relative;
     top: 3.125rem;
+    left: 2.3rem;
     transition: all 0.25s;
 }
 
@@ -491,29 +246,38 @@ textarea {
     margin-top: 0.625rem;
 }
 
+.form-info {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
 /* CONTACTO */
 
 
 /* FOOTER */
 
-.piePagina {
+.footerClass {
     position: absolute;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem;
     background-color: #BF9B77;
 
 }
 
-.piePagina img {
+.footerClass img {
     transition: all 0.25s;
+    margin: 0 2rem;
+
 }
 
-.piePagina img:hover {
-    transform: scale(1.2,1.2);
+.footerClass img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
 }
 
 /* FOOTER */
@@ -525,211 +289,90 @@ textarea {
 
 
 /*RESPONSIVE */
-
-/* INDEX */
-
-@media only screen and (max-width: 768px) {
-    .index-layout {
-        grid-template-areas:
-            "cabecera"
-            "principal"
-            "historia"
-            "pie";
-    }
-
-    .encabezado {
-        grid-template-columns: 1fr;
-        justify-items: center;
-
-    }
-
-    .nav-logo {
-        width: 5rem;
-    }
-
-    .barraNavegacion__Lista li {
-        font-size: 0.9rem;
-    }
-
+@media only screen and (max-width: 576px) {
 
     .titulo-grid h1 {
-        font-size: 1.4rem;
-        width: 100%;
-        margin: auto;
-    
-    }
-    .indexMain {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        justify-items: center;
+        font-size: 2rem;
     }
 
-    .indexImagen1 {
-        width: 15rem;
+    .carousel-item img {
+        height: 20rem;
     }
 
-    .indexImagen2 {
-        width: 15rem;
-    }
-
-    .indexImagen3 {
-        width: 15rem;
-    }
-
-
-    .tituloHistoria {
-        font-size: 1.2rem;
-    }
-
-    .parrafoHistoria {
+    .parrafoWinden {
         font-size: 1rem;
     }
 
-    .piePagina {
+    .carouselBox {
+        margin-bottom: 8rem;
+    }
+
+    .parrafo-redes {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .piePagina p {
-        font-size: 1rem;
-    }
-
-    .piePagina img {
-        width: 1rem;
-    }
-
-    /* INDEX */
-
-    /* PRODUCTOS */
-
-    .productos-layout {
-        grid-template-areas:
-            "cabecera"
-            "productos"
-            "pie";
-    }
-
-    .catalogoProducto {
-        grid-template-columns: 1fr;
-        margin-bottom: 2rem;
-    }
-
-    .productos-titulo {
-        font-size: 0.8rem;
-    }
-
-    .fotoProducto {
-        width: 70%;
-    } 
-
-    .fotoProductoDiv {  
-        width: 18rem;
-    }  
-
-    /* NOSOTRAS */
-
-    .nosotras-layout {
-        grid-template-areas:
-            "cabecera"
-            "nosotras"
-            "pie";
-    }
-
-    .nosotras-titulo {
-        font-size: 1.6rem;
-    }
-
-    .mujer1 img,
-    .mujer2 img {
-        width: 17rem;
-    }
-
-    .mujer1 {
+    .redes-footer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .mujer2 {
+    .derechos-footer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .mujer1 p,
-    .mujer2 p {
-        font-size: 1rem;
-        margin-bottom: 5rem;
-    }
-
-
-    /* ENVIOS */
-
-    .envios-layout {
-        grid-template-areas:
-            "cabecera"
-            "envios"
-            "pie";
-    }
-
-    .envios-main-grid h1 {
-        font-size: 1.5rem;
-    }
-
-    .enviosMain {
+    .cards__productos {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .mapaBox {
-        width: 20rem;
-        height: 20rem;
+    .responsiveCard {
+        margin-bottom: 10rem;
+
+    }
+
+    .mujer1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mujer2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .mujer1 p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .mujer2 p {
+        font-size: 1.2rem;
+        text-align: center;
         margin-bottom: 10rem;
     }
 
-    .imagen-moto {
-        width: 19rem;
-    }
-
-    .preciosBox {
-        border: solid 2px black;
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .preciosBox p {
-        margin: 0;
-        font-size: 1.8rem;
-
-    }
-
-    /* CONTACTO */
-
-    .contacto-layout {
-        grid-template-areas:
-            "cabecera"
-            "contacto"
-            "pie";
-    }
-
-    .titulo-contacto {
-        font-size: 1.4rem;
+    .mapa {
+        margin-bottom: 10rem;
     }
 
     .formulario {
-        width: 20rem;
-        margin: 4rem auto;
-        padding: 4.625rem;
-    }
-
-    .formulario__entradas {
-        width: 15rem;
+        margin-bottom: 10rem;
     }
 
     .formulario__botones {
-        width: 10rem;
+        left: 1rem;
     }
 
     textarea {
         width: 15rem;
     }
-}
 
-/*RESPONSIVE */
+}

@@ -7,71 +7,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WV Productos</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
-    <div class="productos-layout">
-        <!-- comienzo del header -->
-        <header class="encabezado header-grid">
-            <img class="nav-logo" src="../imagenes/windenlogo.jpeg" alt="logo winden">
-            <nav class="barraNavegacion">
-                <ul class="barraNavegacion__Lista">
-                    <li><a href="..\index.html">Inicio </a></li>
-                    <li><a href="#">Productos </a></li>
-                    <li><a href="nosotras.html">Nosotras </a></li>
-                    <li><a href="envios.html">Envios </a></li>
-                    <li><a href="contacto.html">Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- fin del header -->
-        <!-- comienzo del main -->
-        <main class="grid-productos-main">
-            <div class="productos-titulo">
-                <h1>Nuestros Productos</h1>
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <img class="nav-logo" src="../imagenes/windenlogo.jpeg" alt="logo winden">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse barraNav" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="envios.html">Envios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <article class="catalogoProducto">
-                <div class="fotoProductoDiv">
-                    <img class="fotoProducto" src="../imagenes/velascomunes.jpg" alt="foto vela">
-                    <p class="productoParrafo">Vela de cera de soja de 200gr. Estas velas pueden contener aromas de una
-                        fragancia afrutada,
-                        dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar, aportando frescura y
-                        logrando un aire renovado.</p>
+        </nav>
+    </header>
+    <!-- fin del header -->
+    <!-- comienzo del main -->
+    <main>
+        <div class="productos-titulo">
+            <h1>Nuestros Productos</h1>
+        </div>
+        <section>
+            <article class="cards__productos">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/velascomunes.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Vela de cera de soja de 200gr. Estas velas pueden contener aromas de una
+                            fragancia afrutada, dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar,
+                            aportando frescura y logrando un aire renovado</p>
+                    </div>
                 </div>
-                <div class="fotoProductoDiv">
-                    <img class="fotoProducto" src="../imagenes/velasigno.jpg" alt="foto vela">
-                    <p class="productoParrafo">Vela de cera de soja de 200gr con signos del zodiaco. Acompaña tu dia con
-                        las velas de tu signo, que ademas de quitar las malas vibras, se compenetran perfectamente con
-                        tu personalidad.</p>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/velascaramelera.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Vela de cera de soja en caramelera de 150gr. Estas velas pueden contener
+                            aromas de una
+                            fragancia afrutada, dulce y acuatica. Edicion especial, una vez consumida la vela, podes
+                            reutilizar la caramelera a gusto</p>
+                    </div>
                 </div>
-                <div class="fotoProductoDiv">
-                    <img class="fotoProducto" src="../imagenes/minidifusores.jpg" alt="foto vela">
-                    <p class="productoParrafo">Los mini difusores son ideales para colgarlos en el placard, en cajones,
-                        en el auto o en el espacio que quieras. Perfuman un monton, dejando un aroma riquisimo. Podes
-                        elegirlos en cualquiera de nuestras fragancias.</p>
-                </div>
-                <div class="fotoProductoDiv">
-                    <img class="fotoProducto" src="../imagenes/difusores1.JPG" alt="foto vela">
-                    <p class="productoParrafo">Los sprays son ideales para aromatizar el ambiente y la ropa. Dejan un
-                        perfume duradero espectacular. Disfrutalo en tus fragancias favoritas</p>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/velascombo2.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Vela de cera de soja con apagador de 200gr. Estas velas pueden contener
+                            aromas de una fragancia afrutada, dulce y acuatica. Ademas de la vela, te regalamos el
+                            apagador, para
+                            darle un estilo diferente</p>
+                    </div>
                 </div>
             </article>
-        </main>
-        <!-- fin del main -->
-        <!-- comienzo del footer -->
-        <footer class="piePagina pie-grid">
-            <p>Nuestra redes sociales!</p>
-            <a href="https://www.instagram.com/winden.velas/" target="_blank">
-                <img src="../imagenes/instagram.png" alt="logo instagram"> </a>
-            <a href="https://wa.me/541169229469" target="_blank">
-                <img src="../imagenes/whatsapp.png" alt="logo whatsapp"> </a>
-            <a href="https://www.facebook.com/Windenvelas-109615950888288/?ref=page_internal" target="_black">
-                <img src="../imagenes/facebook.png" alt="logo facebook"> </a>
-            <p>© Derechos Reservados Winden 2022</p>
-        </footer>
-        <!-- fin del footer -->
+            <article class="cards__productos">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/velaspasto.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Vela de cera de soja de 200gr. Estas velas pueden contener aromas de una
+                            fragancia afrutada, dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar,
+                            aportando frescura y logrando un aire renovado</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/velasigno.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Vela de cera de soja de 200gr con signos del zodiaco. Acompaña tu dia con
+                            las velas de tu signo, que ademas de quitar las malas vibras, se compenetran perfectamente
+                            con
+                            tu personalidad.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/velascombo.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Combo de velas de soja de 150gr y 200gr. Estas velas pueden contener aromas
+                            de una
+                            fragancia afrutada, dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar,
+                            aportando frescura y logrando un aire renovado </p>
+                    </div>
+                </div>
+            </article>
+            <article class="cards__productos">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/minidifusores.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Los mini difusores son ideales para colgarlos en el placard, en cajones,
+                            en el auto o en el espacio que quieras. Perfuman un monton, dejando un aroma riquisimo.
+                            Podes
+                            elegirlos en cualquiera de nuestras fragancias.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/difusorhorno.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Los sprays son ideales para aromatizar el ambiente y la ropa. Dejan un
+                            perfume duradero espectacular. Disfrutalo en tus fragancias favoritas. Ademas, le sumamos un
+                            hornito que funciona como aromatizante y decoracion.</p>
+                    </div>
+                </div>
+                <div class="card responsiveCard" style="width: 18rem;">
+                    <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                        <img src="../imagenes/difusores1.JPG" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-text">Los sprays son ideales para aromatizar el ambiente y la ropa. Dejan un
+                            perfume duradero espectacular. Disfrutalo en tus fragancias favoritas. Ademas, podes
+                            aprovechar y llevarte distintas fragrancias, que demas un precio especial.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- fin del main -->
+    <!-- comienzo del footer -->
+    <footer class="container-fluid footerClass footerProductos">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 parrafo-redes">
+                <p>Nuestra redes sociales!</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 redes-footer">
+                <a href="https://www.instagram.com/winden.velas/" target="_blank">
+                    <img src="../imagenes/instagram.png" alt="logo instagram"> </a>
+                <a href="https://wa.me/541169229469" target="_blank">
+                    <img src="../imagenes/whatsapp.png" alt="logo whatsapp"> </a>
+                <a href="https://www.facebook.com/Windenvelas-109615950888288/?ref=page_internal" target="_black">
+                    <img src="../imagenes/facebook.png" alt="logo facebook"> </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 derechos-footer">
+                <p>© Derechos Reservados Winden 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fin del footer -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
