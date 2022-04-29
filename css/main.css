@@ -1,0 +1,78 @@
+/* Fuentes GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+/* font-family: 'Birthstone', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+/* font-family: 'Slabo 27px', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* font-family: 'Lobster', cursive; */
+/* Fuentes GOOGLE FONTS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lobster', cursive;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 6rem; }
+
+.encabezado {
+  background-color: #BF9B77; }
+  .encabezado .navbar .container-fluid .nav-logo {
+    width: 7rem;
+    border-radius: 50%;
+    transition: all 1s; }
+    .encabezado .navbar .container-fluid .nav-logo:hover {
+      transform: rotate(360deg); }
+  .encabezado .navbar .container-fluid .barraNav {
+    display: flex;
+    justify-content: flex-end; }
+    .encabezado .navbar .container-fluid .barraNav ul .nav-item a {
+      font-size: 1.5rem;
+      transition: all 0.25s ease; }
+      .encabezado .navbar .container-fluid .barraNav ul .nav-item a:hover {
+        transform: scale(1.1, 1.1);
+        text-decoration: underline;
+        color: black; }
+
+.footerClass {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #BF9B77; }
+  .footerClass .redes-footer {
+    display: flex;
+    justify-content: center; }
+  .footerClass img {
+    transition: all 0.25s;
+    margin: 0 2rem; }
+    .footerClass img:hover {
+      transform: scale(1.2, 1.2); }
+
+.index-main .titulo-main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: white;
+  background-image: url("../../imagenes/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+  width: 100%; }
+
+.index-main .container .row .parrafoWinden {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: auto;
+  margin: 2rem 0; }
+
+.index-main .container .row .carouselBox {
+  width: 47rem;
+  margin: auto;
+  padding: 1.2rem; }
+  .index-main .container .row .carouselBox .carousel-inner .carousel-item img {
+    height: 40rem;
+    border-radius: 5%; }

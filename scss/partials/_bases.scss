@@ -1,0 +1,22 @@
+/* Fuentes GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+/* font-family: 'Birthstone', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+/* font-family: 'Slabo 27px', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+/* Fuentes GOOGLE FONTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+}

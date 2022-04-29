@@ -1,0 +1,41 @@
+.encabezado {
+    background-color: $color-principal;
+
+    .navbar {
+        .container-fluid {
+
+            .nav-logo {
+                width: 7rem;
+                border-radius: 50%;
+                transition: all 1s;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .barraNav {
+                display: flex;
+                justify-content: flex-end;
+
+                ul {
+                    .nav-item {
+
+                        a {
+                            font-size: 1.5rem;
+                            transition: all 0.25s ease;
+
+                            &:hover {
+                                transform: scale(1.1, 1.1);
+                                text-decoration: underline;
+                                color: black;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
