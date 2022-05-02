@@ -1,18 +1,20 @@
 .index-main {
 
-    .titulo-main h1 {
+    .titulo-main {
+        
+        h1 {
         text-align: center;
         font-size: 2.5rem;
         margin: 2rem 0;
         color: white;
-        background-image: url("../../imagenes/fondo.jpg");
+        background-image: url("../imagenes/fondo.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 34.9rem;
         width: 100%;
     }
-
+    }
     .container {
         .row {
             .parrafoWinden {

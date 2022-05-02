@@ -17,6 +17,32 @@ body {
   min-height: 100vh;
   padding-bottom: 6rem; }
 
+.index-main .titulo-main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: white;
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 34.9rem;
+  width: 100%; }
+
+.index-main .container .row .parrafoWinden {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: auto;
+  margin: 2rem 0; }
+
+.index-main .container .row .carouselBox {
+  width: 47rem;
+  margin: auto;
+  padding: 1.2rem; }
+  .index-main .container .row .carouselBox .carousel-inner .carousel-item img {
+    height: 40rem;
+    border-radius: 5%; }
+
 .encabezado {
   background-color: #BF9B77; }
   .encabezado .navbar .container-fluid .nav-logo {
@@ -53,32 +79,6 @@ body {
     margin: 0 2rem; }
     .footerClass .row img:hover {
       transform: scale(1.2, 1.2); }
-
-.index-main .titulo-main h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 2rem 0;
-  color: white;
-  background-image: url("../../imagenes/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 34.9rem;
-  width: 100%; }
-
-.index-main .container .row .parrafoWinden {
-  font-size: 1.4rem;
-  text-align: center;
-  margin: auto;
-  margin: 2rem 0; }
-
-.index-main .container .row .carouselBox {
-  width: 47rem;
-  margin: auto;
-  padding: 1.2rem; }
-  .index-main .container .row .carouselBox .carousel-inner .carousel-item img {
-    height: 40rem;
-    border-radius: 5%; }
 
 @media only screen and (max-width: 576px) {
   .index-main .container .row .parrafoWinden {
