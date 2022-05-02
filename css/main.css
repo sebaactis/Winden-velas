@@ -17,6 +17,24 @@ body {
   min-height: 100vh;
   padding-bottom: 6rem; }
 
+.encabezado {
+  background-color: #BF9B77; }
+  .encabezado .navbar .container-fluid .nav-logo {
+    width: 7rem;
+    border-radius: 50%;
+    transition: all 1s; }
+    .encabezado .navbar .container-fluid .nav-logo:hover {
+      transform: rotate(360deg); }
+  .encabezado .navbar .container-fluid .barraNav ul {
+    margin: auto; }
+    .encabezado .navbar .container-fluid .barraNav ul .nav-item a {
+      font-size: 1.5rem;
+      transition: all 0.25s ease; }
+      .encabezado .navbar .container-fluid .barraNav ul .nav-item a:hover {
+        transform: scale(1.1, 1.1);
+        text-decoration: underline;
+        color: black; }
+
 .index-main .titulo-main h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -42,25 +60,6 @@ body {
   .index-main .container .row .carouselBox .carousel-inner .carousel-item img {
     height: 40rem;
     border-radius: 5%; }
-
-.encabezado {
-  background-color: #BF9B77; }
-  .encabezado .navbar .container-fluid .nav-logo {
-    width: 7rem;
-    border-radius: 50%;
-    transition: all 1s; }
-    .encabezado .navbar .container-fluid .nav-logo:hover {
-      transform: rotate(360deg); }
-  .encabezado .navbar .container-fluid .barraNav {
-    display: flex;
-    justify-content: flex-end; }
-    .encabezado .navbar .container-fluid .barraNav ul .nav-item a {
-      font-size: 1.5rem;
-      transition: all 0.25s ease; }
-      .encabezado .navbar .container-fluid .barraNav ul .nav-item a:hover {
-        transform: scale(1.1, 1.1);
-        text-decoration: underline;
-        color: black; }
 
 .footerClass {
   position: absolute;

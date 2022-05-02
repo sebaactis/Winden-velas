@@ -2,6 +2,7 @@
     background-color: $color-principal;
 
     .navbar {
+
         .container-fluid {
 
             .nav-logo {
@@ -15,10 +16,11 @@
             }
 
             .barraNav {
-                display: flex;
-                justify-content: flex-end;
-
+                
                 ul {
+
+                    margin: auto;
+
                     .nav-item {
 
                         a {
