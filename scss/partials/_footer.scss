@@ -5,17 +5,26 @@
     padding: 1rem;
     background-color: $color-principal;
 
-    .redes-footer {
-        display: flex;
-        justify-content: center;
-    }
+    .row {
 
-    img {
-        transition: all 0.25s;
-        margin: 0 2rem;
+        .redes-footer {
+            display: flex;
+            justify-content: center;
+        }
 
-        &:hover {
-            transform: scale(1.2, 1.2);
+        .derechos-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        img {
+            transition: all 0.25s;
+            margin: 0 2rem;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
         }
     }
+
 }

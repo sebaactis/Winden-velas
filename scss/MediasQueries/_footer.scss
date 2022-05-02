@@ -1,0 +1,27 @@
+@media only screen and (max-width: 576px) {
+
+    .footerClass {
+        .row {
+
+            .parrafo-redes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .redes-footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .derechos-footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+}
