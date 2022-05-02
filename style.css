@@ -396,6 +396,10 @@ textarea {
         width: 90%
     }
 
+    .formulario__entradas {
+        width: 15rem;
+    }
+
     .formulario__botones {
         left: 0.5rem;
     }
