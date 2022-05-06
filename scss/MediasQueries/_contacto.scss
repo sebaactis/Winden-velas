@@ -1,0 +1,24 @@
+@media only screen and (max-width: 576px) {
+    main {
+        .container-fluid {
+            .row {
+                .formulario {
+                    margin-bottom: 10rem;
+                    width: 90%;
+
+                    &__entradas {
+                        width: 15rem;
+                    }
+
+                    &__botones {
+                        left: 0.5rem;
+                    }
+
+                    textarea {
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}

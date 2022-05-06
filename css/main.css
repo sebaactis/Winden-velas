@@ -31,11 +31,11 @@ body {
       font-size: 1.5rem;
       transition: all 0.25s ease; }
       .encabezado .navbar .container-fluid .barraNav ul .nav-item a:hover {
-        transform: scale(1.1, 1.1);
+        transform: scale(1.08, 1.08);
         text-decoration: underline;
         color: black; }
 
-.index-main .titulo-main h1 {
+main .titulo-main h1 {
   text-align: center;
   font-size: 2.5rem;
   margin: 2rem 0;
@@ -47,19 +47,146 @@ body {
   height: 34.9rem;
   width: 100%; }
 
-.index-main .container .row .parrafoWinden {
+main .container .row .parrafoWinden {
   font-size: 1.4rem;
   text-align: center;
   margin: auto;
   margin: 2rem 0; }
 
-.index-main .container .row .carouselBox {
+main .container .row .carouselBox {
   width: 47rem;
   margin: auto;
   padding: 1.2rem; }
-  .index-main .container .row .carouselBox .carousel-inner .carousel-item img {
+  main .container .row .carouselBox .carousel-inner .carousel-item img {
     height: 40rem;
     border-radius: 5%; }
+
+main .productos-titulo {
+  text-align: center;
+  margin: 2rem 0;
+  color: white;
+  background-image: url("../imagenes/fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+  width: 100%; }
+
+main section .cards__productos {
+  display: flex;
+  justify-content: space-evenly; }
+  main section .cards__productos .card {
+    margin: 1rem 1rem;
+    transition: all 0.25s;
+    box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75); }
+    main section .cards__productos .card:hover {
+      transform: translateY(-15px); }
+
+main .nosotras-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: white;
+  background-image: url("../imagenes/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+  width: 100%; }
+
+main .mujer1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  main .mujer1 p {
+    font-size: 1.7rem; }
+
+main .mujer2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center; }
+  main .mujer2 p {
+    font-size: 1.7rem; }
+
+main .titulo-envios {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: white;
+  background-image: url("../imagenes/fondo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 35rem;
+  width: 100%; }
+
+main .container-fluid .showroom-box .row .titulo-showroom {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: #BF9B77; }
+
+main .container-fluid .showroom-box .row iframe {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 2rem; }
+
+main .titulo-contacto {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: white;
+  background-image: url("../imagenes/fondo5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 35rem;
+  width: 100%; }
+
+main .container-fluid .row .formulario {
+  width: 45rem;
+  background-color: #BF9B77;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 5.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: inset 0.313rem black;
+  box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75); }
+  main .container-fluid .row .formulario__titulo {
+    position: relative;
+    bottom: 1.9rem;
+    font-size: 25px; }
+  main .container-fluid .row .formulario__entradas {
+    width: 80%;
+    margin: 0.625rem;
+    padding: 0.9rem;
+    border: solid 0.125rem #000000; }
+  main .container-fluid .row .formulario__botones {
+    width: 70%;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: 3.125rem;
+    left: 2.3rem;
+    transition: all 0.25s; }
+  main .container-fluid .row .formulario__botones:hover {
+    transform: scale(1.1, 1.1); }
+  main .container-fluid .row .formulario textarea {
+    resize: none;
+    border: solid 0.125rem #000000;
+    margin-top: 0.625rem; }
+  main .container-fluid .row .formulario .form-info {
+    margin-top: 2rem;
+    font-size: 1.2rem; }
 
 .footerClass {
   position: absolute;
@@ -80,12 +207,57 @@ body {
       transform: scale(1.2, 1.2); }
 
 @media only screen and (max-width: 576px) {
-  .index-main .container .row .parrafoWinden {
+  main .titulo-main h1 {
+    font-size: 2rem; }
+  main .container .row .parrafoWinden {
     font-size: 1rem; }
-  .index-main .container .row .carouselBox {
+  main .container .row .carouselBox {
     margin-bottom: 8rem; }
-    .index-main .container .row .carouselBox .carousel-inner .carousel-item img {
+    main .container .row .carouselBox .carousel-inner .carousel-item img {
       height: 20rem; } }
+
+@media only screen and (max-width: 576px) {
+  main .productos-titulo h1 {
+    font-size: 1.9rem; }
+  section .cards__productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  section .responsiveCard {
+    margin-bottom: 10rem; } }
+
+@media only screen and (max-width: 576px) {
+  main .nosotras-titulo {
+    font-size: 2rem; }
+  main .mujer1 {
+    flex-direction: column;
+    justify-content: center; }
+    main .mujer1 p {
+      font-size: 1.2rem;
+      text-align: center; }
+  main .mujer2 {
+    flex-direction: column;
+    justify-content: center; }
+    main .mujer2 p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 10rem; } }
+
+@media only screen and (max-width: 576px) {
+  main .container-fluid .showroom-box .row .mapa {
+    margin-bottom: 11rem; } }
+
+@media only screen and (max-width: 576px) {
+  main .container-fluid .row .formulario {
+    margin-bottom: 10rem;
+    width: 90%; }
+    main .container-fluid .row .formulario__entradas {
+      width: 15rem; }
+    main .container-fluid .row .formulario__botones {
+      left: 0.5rem; }
+    main .container-fluid .row .formulario textarea {
+      width: 15rem; } }
 
 @media only screen and (max-width: 576px) {
   .footerClass .row .parrafo-redes {
@@ -96,6 +268,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .footerClass .row .redes-footer a {
+      margin-bottom: 0.5rem; }
   .footerClass .row .derechos-footer {
     display: flex;
     flex-direction: column;

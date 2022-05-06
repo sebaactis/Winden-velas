@@ -1,0 +1,75 @@
+main {
+    .titulo-contacto {
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        color: white;
+        background-image: url("../imagenes/fondo5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 35rem;
+        width: 100%;
+    }
+
+    .container-fluid {
+        .row {
+            .formulario {
+                width: 45rem;
+                background-color: #BF9B77;
+                margin: auto;
+                margin-bottom: 2rem;
+                padding: 5.625rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: inset 0.313rem black;
+                box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
+
+
+                &__titulo {
+                    position: relative;
+                    bottom: 1.9rem;
+                    font-size: 25px;
+                }
+
+                &__entradas {
+                    width: 80%;
+                    margin: 0.625rem;
+                    padding: 0.9rem;
+                    border: solid 0.125rem #000000;
+                }
+
+                &__botones {
+                    width: 70%;
+                    margin: 1rem 0;
+                    text-align: center;
+                    background-color: white;
+                    position: relative;
+                    top: 3.125rem;
+                    left: 2.3rem;
+                    transition: all 0.25s;
+                }
+
+                &__botones:hover {
+                    transform: scale(1.1, 1.1);
+                }
+
+                textarea {
+                    resize: none;
+                    border: solid 0.125rem #000000;
+                    margin-top: 0.625rem;
+                }
+
+                .form-info {
+                    margin-top: 2rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+}

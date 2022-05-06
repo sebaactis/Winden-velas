@@ -1,7 +1,11 @@
 @media only screen and (max-width: 576px) {
 
-    .index-main {
-
+    main {
+       .titulo-main {
+           h1 {
+               font-size: 2rem;
+           }
+       }
         .container {
             .row {
                 .parrafoWinden {
