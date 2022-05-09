@@ -1,24 +1,33 @@
 main {
 
     .titulo-main {
-        
+
         h1 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin: 2rem 0;
-        color: white;
-        background-image: url("../imagenes/fondo.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 34.9rem;
-        width: 100%;
+            text-align: center;
+            font-size: map-get($tipografias-sizes, titulos);
+            margin: 1rem 0;
+            color: white;
+            background-image: url("../imagenes/fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 35rem;
+            width: 100%;
+        }
     }
-    }
+
     .container {
         .row {
+
+            .titulo-historia {
+                text-align: center;
+                font-size: map-get($tipografias-sizes, subtitulos);
+                margin: 2rem 0;
+                color: #BF9B77;
+            }
+
             .parrafoWinden {
-                font-size: 1.4rem;
+                font-size: map-get($tipografias-sizes, parrafos);
                 text-align: center;
                 margin: auto;
                 margin: 2rem 0;
@@ -27,6 +36,7 @@ main {
             .carouselBox {
                 width: 47rem;
                 margin: auto;
+                margin-bottom: 8rem;
                 padding: 1.2rem;
 
                 .carousel-inner {

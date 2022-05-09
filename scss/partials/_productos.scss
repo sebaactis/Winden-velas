@@ -1,7 +1,8 @@
 main {
     .productos-titulo {
         text-align: center;
-        margin: 2rem 0;
+        font-size: map-get($tipografias-sizes, titulos);
+        margin: 1rem 0;
         color: white;
         background-image: url("../imagenes/fondo2.jpg");
         background-repeat: no-repeat;
@@ -13,11 +14,10 @@ main {
 
     section {
         .cards__productos {
-            display: flex;
-            justify-content: space-evenly;
+            @extend %flexbox;
 
             .card {
-                margin: 1rem 1rem;
+                margin: 1rem 0;
                 transition: all 0.25s;
                 box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
                 -webkit-box-shadow: -2px 2px 11px 0px rgba(0, 0, 0, 0.75);
@@ -26,7 +26,18 @@ main {
                 &:hover {
                     transform: translateY(-15px);
                 }
+
+
+                .card-body {
+                    .card-text {
+                        font-size: map-get($tipografias-sizes, cards);
+                    }
+                }
             }
+        }
+
+        .card-margin {
+            margin-bottom: 9rem;
         }
     }
 }

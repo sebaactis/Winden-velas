@@ -7,19 +7,48 @@
 
     .row {
 
+        .links-footer {
+            @include flex (column, center, center);
+
+            p {
+                color: black;
+                text-decoration: underline;
+            }
+
+            ul {
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.2rem;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
         .redes-footer {
-            display: flex;
-            justify-content: center;
+            @include flex (column, center, center);
+
+            p {
+                color: black;
+                text-decoration: underline;
+            }
         }
 
         .derechos-footer {
-            display: flex;
-            justify-content: flex-end;
+            @include flex (column, center, center);
         }
 
         img {
             transition: all 0.25s;
-            margin: 0 2rem;
+            margin: 0.4rem 2rem;
 
             &:hover {
                 transform: scale(1.2, 1.2);

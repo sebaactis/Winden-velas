@@ -1,8 +1,8 @@
 main {
     .nosotras-titulo {
         text-align: center;
-        font-size: 2.5rem;
-        margin: 2rem 0;
+        font-size: map-get($tipografias-sizes, titulos);
+        margin: 1rem 0;
         color: white;
         background-image: url("../imagenes/fondo3.jpg");
         background-repeat: no-repeat;
@@ -13,23 +13,18 @@ main {
     }
 
     .mujer1 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        @include flex (row, flex-start, center);
 
         p {
-            font-size: 1.7rem;
+            font-size: map-get($tipografias-sizes, parrafos);
         }
     }
 
     .mujer2 {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        align-items: center;
-
+        @include flex (row-reverse, flex-start, center);
+        margin-bottom: 8rem;
         p {
-            font-size: 1.7rem;
+            font-size: map-get($tipografias-sizes, parrafos);
         }
     }
 }

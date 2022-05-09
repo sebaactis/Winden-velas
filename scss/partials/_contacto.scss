@@ -1,8 +1,8 @@
 main {
     .titulo-contacto {
         text-align: center;
-        font-size: 2.5rem;
-        margin: 2rem 0;
+        font-size: map-get($tipografias-sizes, titulos);
+        margin: 1rem 0;
         color: white;
         background-image: url("../imagenes/fondo5.jpg");
         background-repeat: no-repeat;
@@ -18,12 +18,9 @@ main {
                 width: 45rem;
                 background-color: #BF9B77;
                 margin: auto;
-                margin-bottom: 2rem;
+                margin-bottom: 10rem;
                 padding: 5.625rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex (column, center, center);
                 border: inset 0.313rem black;
                 box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
                 -webkit-box-shadow: 18px 7px 25px 0px rgba(0, 0, 0, 0.75);
@@ -33,7 +30,7 @@ main {
                 &__titulo {
                     position: relative;
                     bottom: 1.9rem;
-                    font-size: 25px;
+                    font-size: map-get($tipografias-sizes, subtitulos);
                 }
 
                 &__entradas {
