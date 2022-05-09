@@ -1,0 +1,41 @@
+- index.html:
+
+Se agregaron:
+
+Keywords: velas, velas de soja, velas aromaticas, fragancias, aromas, tienda de velas.
+Description: Tienda de Velas de Soja. Productos para aromatizar tu hogar o tu espacio. Poder elegir entre distintos productos y ademas, te ofrecemos un envio sencillo y todos los medios de pago.
+Modificacion de titulo: WV | Inicio.
+Encabezados. Se agrego un h2: "Nuestra historia".
+
+- productos.html
+
+Se agregaron:
+
+Keywords: velas, velas de soja, velas aromaticas, fragancias, aromas, tienda de velas, productos.
+Description: Tienda de Velas de Soja. Podes ver nuestros productos para ver que te gusta, y luego te dirigimos a nuestra tienda online para que puedas comprar lo que quieras. Todos lo que veas en la pagina, tiene stock para que puedas comprar.
+Modificaciones de titulo: WV | Productos.
+
+- nosotras.html: 
+
+Se agregaron:
+
+Keywords: velas, velas de soja, velas aromaticas, fragancias, aromas, quienes somos.
+Description Tienda de Velas de Soja. Quienes somos y que hacemos. Nos interesa conectar con nuestros clientes, por eso te contamos que hacemos y de donde venimos, para que nos podamos acercar un poco mas.
+Modificaciones de titulo: WV | Nosotros.
+
+- envios.html:
+
+Se agregaron: 
+
+Keywords: velas, velas de soja, velas aromaticas, fragancias, aromas, tienda de velas, envios, showroom.
+Description: Tienda de Velas de Soja. Tenes la posibilidad de comprar online y que te lo enviemos en el tiempo estipulado, o pasarte por nuestro Showroom para ver los productos antes de llevartelo.
+Modificaciones de titulo: WV | Envios.
+
+- contacto.html:
+
+Se agregaron:
+
+Keywords: velas, velas de soja, velas aromaticas, fragancias, aromas, tienda de velas, contacto, formulario.
+Description: Tienda de Velas de Soja. Contactate con nosotros desde nuestro sitio, ante cualquier duda, consulta o sugerencia. Tambien, si realizas venta mayorista, podes dejarnos tus datos para coordinar ventas de mayor volumen.
+Modificacion de titulo: WV | Contacto.
+
