@@ -39,3 +39,7 @@ Keywords: velas, velas de soja, velas aromaticas, fragancias, aromas, tienda de 
 Description: Tienda de Velas de Soja. Contactate con nosotros desde nuestro sitio, ante cualquier duda, consulta o sugerencia. Tambien, si realizas venta mayorista, podes dejarnos tus datos para coordinar ventas de mayor volumen.
 Modificacion de titulo: WV | Contacto.
 
+
+
+- Se optimizaron todas las imagenes para que pesen menos de 200kb.
+

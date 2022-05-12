@@ -5,24 +5,22 @@
         .nosotras-titulo {
             font-size: 2rem;
         }
-        
+
         .mujer1 {
-            flex-direction: column;
-            justify-content: center;
+            @include flex (column, center, center);
 
             p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 text-align: center;
             }
         }
 
         .mujer2 {
-            flex-direction: column;
-            justify-content: center;
+            @include flex (column, center, center);
             margin-bottom: 20rem;
 
             p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 text-align: center;
                 margin-bottom: 10rem;
             }

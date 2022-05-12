@@ -23,6 +23,7 @@ main {
     .mujer2 {
         @include flex (row-reverse, flex-start, center);
         margin-bottom: 8rem;
+
         p {
             font-size: map-get($tipografias-sizes, parrafos);
         }

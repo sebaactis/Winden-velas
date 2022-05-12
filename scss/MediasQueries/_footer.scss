@@ -4,21 +4,22 @@
         .row {
 
             .links-footer {
-                margin-bottom: 1rem;
+                margin: 1.5rem 0;
+
+                ul {
+                    text-align: center;
+                    margin-right: 2rem;
+                }
             }
 
 
             .redes-footer {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex (column, center, center);
                 margin-bottom: 2rem;
             }
 
             .derechos-footer {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex (column, center, center)
             }
         }
     }
