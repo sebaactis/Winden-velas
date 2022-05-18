@@ -4,17 +4,16 @@
         .productos-titulo h1 {
             font-size: 1.9rem;
         }
-    
 
-    section {
-        .cards__productos {
-            @include flex (column, center, center);
-        }
 
-        .responsiveCard {
-            margin-bottom: 30rem;
+        section {
+            .cards__productos {
+                @include flex (column, center, center);
+            }
+
+            .responsiveCard {
+                margin-bottom: 30rem;
+            }
         }
     }
-}
-
 }

@@ -2,7 +2,8 @@ main {
     .productos-titulo {
         text-align: center;
         font-size: map-get($tipografias-sizes, titulos);
-        margin: 1rem 0;
+        margin-top: 0.1rem;
+        margin-bottom: 1rem;
         color: white;
         background-image: url("../imagenes/fondo2.jpg");
         background-repeat: no-repeat;

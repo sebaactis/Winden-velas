@@ -1,19 +1,21 @@
 @media only screen and (max-width: 576px) {
 
     main {
-       .titulo-main {
-           h1 {
-               font-size: 2rem;
-           }
-       }
+        .titulo-main {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
         .container {
             .row {
                 .parrafoWinden {
                     font-size: 1rem;
                 }
+
                 .carouselBox {
                     margin-bottom: 28rem;
-                
+
                     .carousel-inner {
                         .carousel-item {
                             img {
@@ -21,7 +23,7 @@
                             }
                         }
                     }
-                } 
+                }
             }
         }
     }

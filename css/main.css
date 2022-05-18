@@ -24,7 +24,9 @@ main section .cards__productos {
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 6rem; }
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23bf9b77' fill-opacity='0.14'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
 .encabezado {
   background-color: #BF9B77; }
@@ -47,7 +49,8 @@ body {
 main .titulo-main h1 {
   text-align: center;
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
   color: white;
   background-image: url("../imagenes/fondo.jpg");
   background-repeat: no-repeat;
@@ -80,7 +83,8 @@ main .container .row .carouselBox {
 main .productos-titulo {
   text-align: center;
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
   color: white;
   background-image: url("../imagenes/fondo2.jpg");
   background-repeat: no-repeat;
@@ -106,7 +110,8 @@ main section .card-margin {
 main .nosotras-titulo {
   text-align: center;
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
   color: white;
   background-image: url("../imagenes/fondo3.jpg");
   background-repeat: no-repeat;
@@ -135,7 +140,8 @@ main .mujer2 {
 main .titulo-envios {
   text-align: center;
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
   color: white;
   background-image: url("../imagenes/fondo4.jpg");
   background-repeat: no-repeat;
@@ -158,7 +164,8 @@ main .container-fluid .showroom-box .row iframe {
 main .titulo-contacto {
   text-align: center;
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
   color: white;
   background-image: url("../imagenes/fondo5.jpg");
   background-repeat: no-repeat;
@@ -223,14 +230,17 @@ main .container-fluid .row .formulario {
     .footerClass .row .links-footer p {
       color: black;
       text-decoration: underline; }
-    .footerClass .row .links-footer ul li {
-      list-style: none; }
-      .footerClass .row .links-footer ul li a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.2rem; }
-        .footerClass .row .links-footer ul li a:hover {
-          text-decoration: underline; }
+    .footerClass .row .links-footer ul {
+      text-align: center;
+      margin-right: 2rem; }
+      .footerClass .row .links-footer ul li {
+        list-style: none; }
+        .footerClass .row .links-footer ul li a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.2rem; }
+          .footerClass .row .links-footer ul li a:hover {
+            text-decoration: underline; }
   .footerClass .row .redes-footer {
     display: flex;
     flex-direction: column;
@@ -243,7 +253,8 @@ main .container-fluid .row .formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 1.2rem; }
   .footerClass .row img {
     transition: all 0.25s;
     margin: 0.4rem 2rem; }
@@ -311,9 +322,6 @@ main .container-fluid .row .formulario {
 @media only screen and (max-width: 576px) {
   .footerClass .row .links-footer {
     margin: 1.5rem 0; }
-    .footerClass .row .links-footer ul {
-      text-align: center;
-      margin-right: 2rem; }
   .footerClass .row .redes-footer {
     display: flex;
     flex-direction: column;
