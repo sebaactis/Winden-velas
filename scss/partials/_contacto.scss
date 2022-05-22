@@ -4,7 +4,7 @@ main {
         font-size: map-get($tipografias-sizes, titulos);
         margin-top: 0.1rem;
         margin-bottom: 1rem;
-        color: white;
+        color: $color-secundario;
         background-image: url("../imagenes/fondo5.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,7 +17,7 @@ main {
         .row {
             .formulario {
                 width: 45rem;
-                background-color: #BF9B77;
+                background-color: $color-principal;
                 margin: auto;
                 margin-bottom: 10rem;
                 padding: 5.625rem;
@@ -45,7 +45,7 @@ main {
                     width: 70%;
                     margin: 1rem 0;
                     text-align: center;
-                    background-color: white;
+                    background-color: $color-secundario;
                     position: relative;
                     top: 3.125rem;
                     left: 2.3rem;

@@ -44,14 +44,14 @@ body {
       .encabezado .navbar .container-fluid .barraNav ul .nav-item a:hover {
         transform: scale(1.08, 1.08);
         text-decoration: underline;
-        color: black; }
+        color: #000; }
 
 main .titulo-main h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-top: 0.1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #FFF;
   background-image: url("../imagenes/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +85,7 @@ main .productos-titulo {
   font-size: 2.5rem;
   margin-top: 0.1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #FFF;
   background-image: url("../imagenes/fondo2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,7 @@ main .nosotras-titulo {
   font-size: 2.5rem;
   margin-top: 0.1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #FFF;
   background-image: url("../imagenes/fondo3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +142,7 @@ main .titulo-envios {
   font-size: 2.5rem;
   margin-top: 0.1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #FFF;
   background-image: url("../imagenes/fondo4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +166,7 @@ main .titulo-contacto {
   font-size: 2.5rem;
   margin-top: 0.1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #FFF;
   background-image: url("../imagenes/fondo5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,7 +201,7 @@ main .container-fluid .row .formulario {
     width: 70%;
     margin: 1rem 0;
     text-align: center;
-    background-color: white;
+    background-color: #FFF;
     position: relative;
     top: 3.125rem;
     left: 2.3rem;
@@ -228,7 +228,7 @@ main .container-fluid .row .formulario {
     justify-content: center;
     align-items: center; }
     .footerClass .row .links-footer p {
-      color: black;
+      color: #000;
       text-decoration: underline; }
     .footerClass .row .links-footer ul {
       text-align: center;
@@ -237,7 +237,7 @@ main .container-fluid .row .formulario {
         list-style: none; }
         .footerClass .row .links-footer ul li a {
           text-decoration: none;
-          color: black;
+          color: #000;
           font-size: 1.2rem; }
           .footerClass .row .links-footer ul li a:hover {
             text-decoration: underline; }
@@ -247,7 +247,7 @@ main .container-fluid .row .formulario {
     justify-content: center;
     align-items: center; }
     .footerClass .row .redes-footer p {
-      color: black;
+      color: #000;
       text-decoration: underline; }
   .footerClass .row .derechos-footer {
     display: flex;

@@ -7,7 +7,7 @@ main {
             font-size: map-get($tipografias-sizes, titulos);
             margin-top: 0.1rem;
             margin-bottom: 1rem;
-            color: white;
+            color: $color-secundario;
             background-image: url("../imagenes/fondo.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -24,7 +24,7 @@ main {
                 text-align: center;
                 font-size: map-get($tipografias-sizes, subtitulos);
                 margin: 2rem 0;
-                color: #BF9B77;
+                color: $color-principal;
             }
 
             .parrafoWinden {
