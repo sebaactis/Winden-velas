@@ -28,23 +28,32 @@
                 <div class="collapse navbar-collapse barraNav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="paginas/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotras.html">Nosotras</a>
+                            <a class="nav-link" href="paginas/nosotras.html">Nosotras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="envios.html">Envios</a>
+                            <a class="nav-link" href="paginas/envios.html">Envios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito
+                            <span id="botonCarrito" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
                 </div>
             </div>
+
         </nav>
     </header>
     <!-- fin del header -->
@@ -54,15 +63,19 @@
             <h1>Nuestros Productos</h1>
         </div>
         <hr>
-        <section>
+        <section class="contenedor-productos">
             <article class="cards__productos">
                 <div class="card" style="width: 18rem;">
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/velascomunes.jpg" class="card-img-top" alt="foto de velas"></a>
                     <div class="card-body">
+                        <h5>Vela de soja clasica</h5>
                         <p class="card-text">Vela de cera de soja de 200gr. Estas velas pueden contener aromas de una
                             fragancia afrutada, dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar,
                             aportando frescura y logrando un aire renovado</p>
+                        <p class="precio"> $450</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="1"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -70,20 +83,28 @@
                         <img src="../imagenes/velascaramelera.jpg" class="card-img-top"
                             alt="foto de vela en caramelera"></a>
                     <div class="card-body">
+                        <h5>Vela de soja en jarron</h5>
                         <p class="card-text">Vela de cera de soja en caramelera de 150gr. Estas velas pueden contener
                             aromas de una
                             fragancia afrutada, dulce y acuatica. Edicion especial, una vez consumida la vela, podes
                             reutilizar la caramelera a gusto</p>
+                        <p class="precio"> $650</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="2"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/velascombo2.jpg" class="card-img-top" alt="foto de vela"></a>
                     <div class="card-body">
+                        <h5>Vela de soja dura</h5>
                         <p class="card-text">Vela de cera de soja con apagador de 200gr. Estas velas pueden contener
                             aromas de una fragancia afrutada, dulce y acuatica. Ademas de la vela, te regalamos el
                             apagador, para
                             darle un estilo diferente</p>
+                        <p class="precio"> $500</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="3"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
             </article>
@@ -92,29 +113,41 @@
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/velaspasto.jpg" class="card-img-top" alt="foto de vela y pasto"></a>
                     <div class="card-body">
+                        <h5>Vela de soja + planta</h5>
                         <p class="card-text">Vela de cera de soja de 200gr. Estas velas pueden contener aromas de una
                             fragancia afrutada, dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar,
                             aportando frescura y logrando un aire renovado</p>
+                        <p class="precio"> $900</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="4"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/velasigno.jpg" class="card-img-top" alt="foto de vela signo"></a>
                     <div class="card-body">
+                        <h5>Vela de soja zodiaco</h5>
                         <p class="card-text">Vela de cera de soja de 200gr con signos del zodiaco. Acompaña tu dia con
                             las velas de tu signo, que ademas de quitar las malas vibras, se compenetran perfectamente
                             con
                             tu personalidad.</p>
+                        <p class="precio"> $700</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="5"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/velascombo.jpg" class="card-img-top" alt="foto de combo de velas"></a>
                     <div class="card-body">
+                        <h5>Combos velas de soja</h5>
                         <p class="card-text">Combo de velas de soja de 150gr y 200gr. Estas velas pueden contener aromas
                             de una
                             fragancia afrutada, dulce y acuatica. Ayuda a reducir el ambiente negativo en nuestro hogar,
                             aportando frescura y logrando un aire renovado </p>
+                        <p class="precio"> $1200</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="6"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
             </article>
@@ -123,10 +156,14 @@
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/minidifusores.jpg" class="card-img-top" alt="foto de mini difusores"></a>
                     <div class="card-body">
+                        <h5>Mini difusores</h5>
                         <p class="card-text">Los mini difusores son ideales para colgarlos en el placard, en cajones,
                             en el auto o en el espacio que quieras. Perfuman un monton, dejando un aroma riquisimo.
                             Podes
                             elegirlos en cualquiera de nuestras fragancias.</p>
+                        <p class="precio"> $300</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="7"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -134,22 +171,59 @@
                         <img src="../imagenes/difusorhorno.jpg" class="card-img-top"
                             alt="foto de difusores y horno"></a>
                     <div class="card-body">
+                        <h5>Sprays de ambiente</h5>
                         <p class="card-text">Los sprays son ideales para aromatizar el ambiente y la ropa. Dejan un
                             perfume duradero espectacular. Disfrutalo en tus fragancias favoritas. Ademas, le sumamos un
                             hornito que funciona como aromatizante y decoracion.</p>
+                        <p class="precio"> $500</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="8"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <a href="https://www.instagram.com/winden.velas/" target="_blank">
                         <img src="../imagenes/difusores1.JPG" class="card-img-top" alt="foto de difusor"></a>
                     <div class="card-body">
+                        <h5>Difusores</h5>
                         <p class="card-text">Los sprays son ideales para aromatizar el ambiente y la ropa. Dejan un
                             perfume duradero espectacular. Disfrutalo en tus fragancias favoritas. Ademas, podes
                             aprovechar y llevarte distintas fragrancias, que demas un precio especial.</p>
+                        <p class="precio"> $600</p>
+                        <button class="agregar-carrito btn bg-secondary bg-gradient" data-id="9"> Agregar al
+                            carrito</button>
                     </div>
                 </div>
             </article>
         </section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Productos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body carrito">
+                        <table class="table table-striped tablaCarrito">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                </tr>
+                                <button id="botonVaciarCarrito" class="btn btn-danger">Vaciar el carrito</button>
+                                <button id="botonFinalizarCompra" class="btn btn-danger">Finalizar Compra</button>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- fin del main -->
     <!-- comienzo del footer -->
@@ -193,6 +267,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
 </body>
 
 </html>

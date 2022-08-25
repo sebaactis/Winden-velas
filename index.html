@@ -43,8 +43,17 @@
                             <a class="nav-link" href="paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito
+                            <span id="botonCarrito" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
                 </div>
             </div>
+
         </nav>
     </header>
     <!-- fin del header -->
@@ -100,6 +109,35 @@
                 </article>
             </div>
         </section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Productos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body carrito">
+                        <table class="table table-striped">
+                            <thead class="tablaCarrito">
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="carritoVista">
+                                <button id="botonVaciarCarrito" class="btn btn-danger">Vaciar el carrito</button>
+                                <button id="botonFinalizarCompra" class="btn btn-danger">Finalizar Compra</button>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- fin del main -->
     <!-- comienzo del footer -->
