@@ -38,6 +38,7 @@ function agregarProducto(e) {
     if (e.target.classList.contains("agregar-carrito")) {
         const productoSelecionado = e.target.parentElement.parentElement
         datosProducto(productoSelecionado);
+        
     }
 }
 
