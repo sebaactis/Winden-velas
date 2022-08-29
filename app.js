@@ -1,3 +1,6 @@
+
+
+
 // VARIABLES
 
 const carrito = document.querySelector(".carrito")
@@ -5,6 +8,7 @@ const listaProductos = document.querySelector(".contenedor-productos")
 const contenedorCarrito = document.querySelector(".tablaCarrito tbody")
 const limpiarCarrito = document.querySelector("#botonVaciarCarrito")
 const finalizarCompra = document.querySelector("#botonFinalizarCompra")
+
 let articulosCarrito = [];
 
 // EVENT LISTENERS
@@ -48,6 +52,7 @@ function eliminarProducto(e) {
         const productoId = e.target.getAttribute("data-id")
 
         articulosCarrito = articulosCarrito.filter(producto => producto.id !== productoId)
+        localStorage.setItem("carrito", JSON.stringify(articulosCarrito))
 
         carritoHTML();
     }
@@ -70,6 +75,8 @@ function datosProducto(producto) {
             if (producto.id === infoProducto.id) {
                 producto.cantidad++
                 return producto
+                
+
             } else
                 return producto
         });
@@ -77,9 +84,8 @@ function datosProducto(producto) {
 
     } else {
         articulosCarrito = [...articulosCarrito, infoProducto];
+    
     }
-
-
 
     carritoHTML();
     console.log(articulosCarrito);

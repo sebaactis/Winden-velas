@@ -43,9 +43,47 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-ligth" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <img id="#foto-carrito" src="../imagenes/shopping-cart.png" alt="carrito" width="40">
+                            <span id="botonCarrito" class="badge bg-dark text-white ms-1 rounded-pill"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Productos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body carrito">
+                        <table class="table table-striped tablaCarrito">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                </tr>
+                                <div class="d-flex justify-content-around">
+                                    <button id="botonVaciarCarrito" class="btn btn-danger">Vaciar el carrito</button>
+                                    <button id="botonFinalizarCompra" class="btn btn-danger">Finalizar Compra</button>
+                                </div>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- fin del header -->
     <!-- comienzo del main -->
